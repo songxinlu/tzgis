@@ -1,0 +1,32 @@
+server:
+#  port: 18015
+  port: 8188
+# 服务名称
+spring:
+  application:
+    name: tzgis-geteway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.21.122:8848
+#        server-addr: 172.37.52.1:18003
+    gateway:
+      discovery:
+        locator:
+          #通过服务名称访问服务，并开启小写
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: tzgis-search
+          uri: lb://tzgis-search
+          predicates:
+            - Path=/search/**
+        - id: tzgis-config
+          uri: lb://tzgis-config
+          predicates:
+            - Path=/config/**
+# 配置Gateway日志等级，输出转发细节信息
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN

@@ -1,0 +1,7 @@
+# Spring配置
+spring:
+  profiles:
+#    active: test
+    active: dev
+#    active: pro
+#    active: prod

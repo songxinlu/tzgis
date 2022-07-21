@@ -1,0 +1,2 @@
+15:07:56.557 [http-nio-8090-exec-2] ERROR c.a.d.p.DruidDataSource - [validationQueryCheck,1197] - testWhileIdle is true, validationQuery not set
+15:21:19.720 [http-nio-8090-exec-3] ERROR c.a.d.p.DruidDataSource - [validationQueryCheck,1197] - testWhileIdle is true, validationQuery not set

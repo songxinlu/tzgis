@@ -1,0 +1,78 @@
+# 开发环境配置
+server:
+    # 服务器的HTTP端口，默认为8080
+    port: 18016
+    servlet:
+        # 应用的访问路径
+        context-path: /config
+    tomcat:
+        # tomcat的URI编码
+        uri-encoding: UTF-8
+        # tomcat最大线程数，默认为200
+        max-threads: 2000
+        # Tomcat启动初始化的线程数，默认值25
+        min-spare-threads: 30
+
+# 日志配置
+logging:
+    level:
+        com.hm: debug
+        org.springframework: warn
+
+# Spring配置
+spring:
+    application:
+        name: tzgis-config
+    resources: #访问系统外部资源，将该目录下的文件映射到系统下
+        static-locations: file:/home/admin/dps/hm7000/GIS/img/roadmap/
+    mvc:
+        static-path-pattern: /img/**
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 172.37.52.1:18003
+    data:
+        mongodb:
+            custom:
+                host: 127.0.0.1
+                port: 18010
+                database: tzgis
+                # 连接池大小
+                connectionsPerHost: 200
+                # 最小连接池大小
+                minConnectionsPerHost: 10
+                connectionTimeoutMs: 5000
+                readTimeoutMs: 120000
+                maxWaitTimeMs: 5000
+                maxConnectionIdleTime: 60000
+                maxConnectionLifeTime: 0
+    datasource:
+        username: root
+        password: nari123456
+        url: jdbc:mysql://127.0.0.1:18002/em?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8&verifyServerCertificate=false&useSSL=false
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
+        initialSize: 0
+        minIdle: 5
+        maxActive: 100
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+        #    filters: stat
+        maxPoolPreparedStatementPerConnectionSize: 20
+        useGlobalDataSourceStat: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+# MyBatis配置
+mybatis:
+    # 配置mapper的扫描，找到所有的mapper.xml映射文件
+    mapperLocations: classpath*:mybatis/*Mapper.xml
+
+data:
+    filePath: "/home/admin/dps/hm7000/GIS"

@@ -1,0 +1,557 @@
+10:17:38.609 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.0.22.Final
+10:17:40.425 [main] INFO  c.h.t.SearchApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+10:17:42.592 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8090"]
+10:17:42.593 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:17:42.593 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+10:17:42.750 [main] INFO  o.a.c.c.C.[.[.[/search] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:17:43.573 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=1000}
+10:17:43.620 [cluster-ClusterId{value='627879c75441c973c8dbe0d4', description='null'}-127.0.0.1:27017] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:2, serverValue:12}] to 127.0.0.1:27017
+10:17:43.620 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:1, serverValue:11}] to 127.0.0.1:27017
+10:17:43.623 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:3, serverValue:13}] to 127.0.0.1:27017
+10:17:43.624 [cluster-ClusterId{value='627879c75441c973c8dbe0d4', description='null'}-127.0.0.1:27017] INFO  o.m.driver.cluster - [info,71] - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 3]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2824600}
+10:17:43.626 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:4, serverValue:14}] to 127.0.0.1:27017
+10:17:43.629 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:5, serverValue:15}] to 127.0.0.1:27017
+10:17:43.631 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:6, serverValue:16}] to 127.0.0.1:27017
+10:17:43.634 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:7, serverValue:17}] to 127.0.0.1:27017
+10:17:43.636 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:8, serverValue:18}] to 127.0.0.1:27017
+10:17:43.639 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:9, serverValue:19}] to 127.0.0.1:27017
+10:17:43.641 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:10, serverValue:20}] to 127.0.0.1:27017
+10:17:43.643 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:11, serverValue:21}] to 127.0.0.1:27017
+10:17:44.091 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:17:44.095 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:17:45.373 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8090"]
+10:17:45.408 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,71] - nacos registry, DEFAULT_GROUP tzgis-search 172.16.21.70:8090 register finished
+10:17:45.728 [main] INFO  c.h.t.SearchApplication - [logStarted,61] - Started SearchApplication in 7.772 seconds (JVM running for 9.591)
+10:19:04.386 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[.[.[/search] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:19:04.480 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:11, serverValue:21}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.483 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:10, serverValue:20}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.483 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:9, serverValue:19}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.484 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:8, serverValue:18}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.485 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:7, serverValue:17}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.486 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:6, serverValue:16}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.486 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:5, serverValue:15}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.487 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:4, serverValue:14}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.487 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:3, serverValue:13}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.487 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:1, serverValue:11}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:19:04.490 [http-nio-8090-exec-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:12, serverValue:22}] to 127.0.0.1:27017
+10:19:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:13, serverValue:23}] to 127.0.0.1:27017
+10:19:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:14, serverValue:24}] to 127.0.0.1:27017
+10:19:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:15, serverValue:25}] to 127.0.0.1:27017
+10:19:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:16, serverValue:26}] to 127.0.0.1:27017
+10:19:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:17, serverValue:27}] to 127.0.0.1:27017
+10:19:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:18, serverValue:28}] to 127.0.0.1:27017
+10:19:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:19, serverValue:29}] to 127.0.0.1:27017
+10:19:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:20, serverValue:30}] to 127.0.0.1:27017
+10:19:43.615 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:21, serverValue:31}] to 127.0.0.1:27017
+10:20:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:12, serverValue:22}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:20:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:22, serverValue:32}] to 127.0.0.1:27017
+10:21:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:13, serverValue:23}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:14, serverValue:24}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:15, serverValue:25}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:16, serverValue:26}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:17, serverValue:27}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:18, serverValue:28}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:19, serverValue:29}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:20, serverValue:30}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:21, serverValue:31}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:21:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:23, serverValue:33}] to 127.0.0.1:27017
+10:21:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:24, serverValue:34}] to 127.0.0.1:27017
+10:21:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:25, serverValue:35}] to 127.0.0.1:27017
+10:21:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:26, serverValue:36}] to 127.0.0.1:27017
+10:21:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:27, serverValue:37}] to 127.0.0.1:27017
+10:21:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:28, serverValue:38}] to 127.0.0.1:27017
+10:21:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:29, serverValue:39}] to 127.0.0.1:27017
+10:21:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:30, serverValue:40}] to 127.0.0.1:27017
+10:21:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:31, serverValue:41}] to 127.0.0.1:27017
+10:22:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:22, serverValue:32}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:22:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:32, serverValue:42}] to 127.0.0.1:27017
+10:23:43.590 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:23, serverValue:33}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:24, serverValue:34}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:25, serverValue:35}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:26, serverValue:36}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:27, serverValue:37}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:28, serverValue:38}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:29, serverValue:39}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:30, serverValue:40}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:31, serverValue:41}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:23:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:33, serverValue:43}] to 127.0.0.1:27017
+10:23:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:34, serverValue:44}] to 127.0.0.1:27017
+10:23:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:35, serverValue:45}] to 127.0.0.1:27017
+10:23:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:36, serverValue:46}] to 127.0.0.1:27017
+10:23:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:37, serverValue:47}] to 127.0.0.1:27017
+10:23:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:38, serverValue:48}] to 127.0.0.1:27017
+10:23:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:39, serverValue:49}] to 127.0.0.1:27017
+10:23:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:40, serverValue:50}] to 127.0.0.1:27017
+10:23:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:41, serverValue:51}] to 127.0.0.1:27017
+10:24:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:32, serverValue:42}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:24:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:42, serverValue:52}] to 127.0.0.1:27017
+10:25:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:33, serverValue:43}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:34, serverValue:44}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:35, serverValue:45}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:36, serverValue:46}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:37, serverValue:47}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:38, serverValue:48}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:39, serverValue:49}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:40, serverValue:50}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:41, serverValue:51}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:25:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:43, serverValue:53}] to 127.0.0.1:27017
+10:25:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:44, serverValue:54}] to 127.0.0.1:27017
+10:25:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:45, serverValue:55}] to 127.0.0.1:27017
+10:25:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:46, serverValue:56}] to 127.0.0.1:27017
+10:25:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:47, serverValue:57}] to 127.0.0.1:27017
+10:25:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:48, serverValue:58}] to 127.0.0.1:27017
+10:25:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:49, serverValue:59}] to 127.0.0.1:27017
+10:25:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:50, serverValue:60}] to 127.0.0.1:27017
+10:25:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:51, serverValue:61}] to 127.0.0.1:27017
+10:26:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:42, serverValue:52}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:26:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:43, serverValue:53}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:26:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:52, serverValue:62}] to 127.0.0.1:27017
+10:26:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:53, serverValue:63}] to 127.0.0.1:27017
+10:27:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:44, serverValue:54}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:45, serverValue:55}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:46, serverValue:56}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:47, serverValue:57}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:48, serverValue:58}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:49, serverValue:59}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:50, serverValue:60}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:51, serverValue:61}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:27:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:54, serverValue:64}] to 127.0.0.1:27017
+10:27:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:55, serverValue:65}] to 127.0.0.1:27017
+10:27:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:56, serverValue:66}] to 127.0.0.1:27017
+10:27:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:57, serverValue:67}] to 127.0.0.1:27017
+10:27:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:58, serverValue:68}] to 127.0.0.1:27017
+10:27:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:59, serverValue:69}] to 127.0.0.1:27017
+10:27:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:60, serverValue:70}] to 127.0.0.1:27017
+10:27:43.616 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:61, serverValue:71}] to 127.0.0.1:27017
+10:28:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:52, serverValue:62}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:28:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:53, serverValue:63}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:28:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:62, serverValue:72}] to 127.0.0.1:27017
+10:28:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:63, serverValue:73}] to 127.0.0.1:27017
+10:29:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:54, serverValue:64}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:55, serverValue:65}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:56, serverValue:66}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:57, serverValue:67}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:58, serverValue:68}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:59, serverValue:69}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:60, serverValue:70}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:61, serverValue:71}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:29:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:64, serverValue:74}] to 127.0.0.1:27017
+10:29:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:65, serverValue:75}] to 127.0.0.1:27017
+10:29:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:66, serverValue:76}] to 127.0.0.1:27017
+10:29:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:67, serverValue:77}] to 127.0.0.1:27017
+10:29:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:68, serverValue:78}] to 127.0.0.1:27017
+10:29:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:69, serverValue:79}] to 127.0.0.1:27017
+10:29:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:70, serverValue:80}] to 127.0.0.1:27017
+10:29:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:71, serverValue:81}] to 127.0.0.1:27017
+10:30:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:62, serverValue:72}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:30:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:63, serverValue:73}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:30:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:64, serverValue:74}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:30:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:72, serverValue:82}] to 127.0.0.1:27017
+10:30:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:73, serverValue:83}] to 127.0.0.1:27017
+10:30:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:74, serverValue:84}] to 127.0.0.1:27017
+10:31:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:65, serverValue:75}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:31:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:66, serverValue:76}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:31:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:67, serverValue:77}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:31:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:68, serverValue:78}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:31:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:69, serverValue:79}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:31:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:70, serverValue:80}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:31:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:71, serverValue:81}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:31:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:75, serverValue:85}] to 127.0.0.1:27017
+10:31:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:76, serverValue:86}] to 127.0.0.1:27017
+10:31:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:77, serverValue:87}] to 127.0.0.1:27017
+10:31:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:78, serverValue:88}] to 127.0.0.1:27017
+10:31:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:79, serverValue:89}] to 127.0.0.1:27017
+10:31:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:80, serverValue:90}] to 127.0.0.1:27017
+10:31:43.615 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:81, serverValue:91}] to 127.0.0.1:27017
+10:32:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:72, serverValue:82}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:32:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:73, serverValue:83}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:32:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:74, serverValue:84}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:32:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:82, serverValue:92}] to 127.0.0.1:27017
+10:32:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:83, serverValue:93}] to 127.0.0.1:27017
+10:32:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:84, serverValue:94}] to 127.0.0.1:27017
+10:33:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:75, serverValue:85}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:33:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:76, serverValue:86}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:33:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:77, serverValue:87}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:33:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:78, serverValue:88}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:33:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:79, serverValue:89}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:33:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:80, serverValue:90}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:33:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:81, serverValue:91}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:33:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:85, serverValue:95}] to 127.0.0.1:27017
+10:33:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:86, serverValue:96}] to 127.0.0.1:27017
+10:33:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:87, serverValue:97}] to 127.0.0.1:27017
+10:33:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:88, serverValue:98}] to 127.0.0.1:27017
+10:33:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:89, serverValue:99}] to 127.0.0.1:27017
+10:33:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:90, serverValue:100}] to 127.0.0.1:27017
+10:33:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:91, serverValue:101}] to 127.0.0.1:27017
+10:34:43.589 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:82, serverValue:92}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:34:43.589 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:83, serverValue:93}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:34:43.589 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:84, serverValue:94}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:34:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:92, serverValue:102}] to 127.0.0.1:27017
+10:34:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:93, serverValue:103}] to 127.0.0.1:27017
+10:34:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:94, serverValue:104}] to 127.0.0.1:27017
+10:35:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:85, serverValue:95}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:86, serverValue:96}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:87, serverValue:97}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:88, serverValue:98}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:89, serverValue:99}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:90, serverValue:100}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:91, serverValue:101}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:92, serverValue:102}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:93, serverValue:103}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:94, serverValue:104}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:35:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:95, serverValue:105}] to 127.0.0.1:27017
+10:35:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:96, serverValue:106}] to 127.0.0.1:27017
+10:35:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:97, serverValue:107}] to 127.0.0.1:27017
+10:35:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:98, serverValue:108}] to 127.0.0.1:27017
+10:35:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:99, serverValue:109}] to 127.0.0.1:27017
+10:35:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:100, serverValue:110}] to 127.0.0.1:27017
+10:35:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:101, serverValue:111}] to 127.0.0.1:27017
+10:35:43.615 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:102, serverValue:112}] to 127.0.0.1:27017
+10:35:43.617 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:103, serverValue:113}] to 127.0.0.1:27017
+10:35:43.618 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:104, serverValue:114}] to 127.0.0.1:27017
+10:37:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:95, serverValue:105}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:96, serverValue:106}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:97, serverValue:107}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:98, serverValue:108}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:99, serverValue:109}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:100, serverValue:110}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:101, serverValue:111}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:102, serverValue:112}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:103, serverValue:113}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:104, serverValue:114}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:37:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:105, serverValue:115}] to 127.0.0.1:27017
+10:37:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:106, serverValue:116}] to 127.0.0.1:27017
+10:37:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:107, serverValue:117}] to 127.0.0.1:27017
+10:37:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:108, serverValue:118}] to 127.0.0.1:27017
+10:37:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:109, serverValue:119}] to 127.0.0.1:27017
+10:37:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:110, serverValue:120}] to 127.0.0.1:27017
+10:37:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:111, serverValue:121}] to 127.0.0.1:27017
+10:37:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:112, serverValue:122}] to 127.0.0.1:27017
+10:37:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:113, serverValue:123}] to 127.0.0.1:27017
+10:37:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:114, serverValue:124}] to 127.0.0.1:27017
+10:39:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:105, serverValue:115}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:106, serverValue:116}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:107, serverValue:117}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:108, serverValue:118}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:109, serverValue:119}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:110, serverValue:120}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:111, serverValue:121}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:112, serverValue:122}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:113, serverValue:123}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:114, serverValue:124}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:39:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:115, serverValue:125}] to 127.0.0.1:27017
+10:39:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:116, serverValue:126}] to 127.0.0.1:27017
+10:39:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:117, serverValue:127}] to 127.0.0.1:27017
+10:39:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:118, serverValue:128}] to 127.0.0.1:27017
+10:39:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:119, serverValue:129}] to 127.0.0.1:27017
+10:39:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:120, serverValue:130}] to 127.0.0.1:27017
+10:39:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:121, serverValue:131}] to 127.0.0.1:27017
+10:39:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:122, serverValue:132}] to 127.0.0.1:27017
+10:39:43.616 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:123, serverValue:133}] to 127.0.0.1:27017
+10:39:43.618 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:124, serverValue:134}] to 127.0.0.1:27017
+10:41:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:115, serverValue:125}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:116, serverValue:126}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:117, serverValue:127}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:118, serverValue:128}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:119, serverValue:129}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:120, serverValue:130}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:121, serverValue:131}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:122, serverValue:132}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:123, serverValue:133}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:124, serverValue:134}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:41:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:125, serverValue:135}] to 127.0.0.1:27017
+10:41:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:126, serverValue:136}] to 127.0.0.1:27017
+10:41:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:127, serverValue:137}] to 127.0.0.1:27017
+10:41:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:128, serverValue:138}] to 127.0.0.1:27017
+10:41:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:129, serverValue:139}] to 127.0.0.1:27017
+10:41:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:130, serverValue:140}] to 127.0.0.1:27017
+10:41:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:131, serverValue:141}] to 127.0.0.1:27017
+10:41:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:132, serverValue:142}] to 127.0.0.1:27017
+10:41:43.616 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:133, serverValue:143}] to 127.0.0.1:27017
+10:41:43.617 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:134, serverValue:144}] to 127.0.0.1:27017
+10:43:29.780 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:134, serverValue:144}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.781 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:133, serverValue:143}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.781 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:132, serverValue:142}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.781 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:131, serverValue:141}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.782 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:130, serverValue:140}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.783 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:129, serverValue:139}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.783 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:128, serverValue:138}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.783 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:127, serverValue:137}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.783 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:126, serverValue:136}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.783 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:125, serverValue:135}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:43:29.785 [http-nio-8090-exec-10] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:135, serverValue:145}] to 127.0.0.1:27017
+10:43:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:136, serverValue:146}] to 127.0.0.1:27017
+10:43:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:137, serverValue:147}] to 127.0.0.1:27017
+10:43:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:138, serverValue:148}] to 127.0.0.1:27017
+10:43:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:139, serverValue:149}] to 127.0.0.1:27017
+10:43:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:140, serverValue:150}] to 127.0.0.1:27017
+10:43:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:141, serverValue:151}] to 127.0.0.1:27017
+10:43:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:142, serverValue:152}] to 127.0.0.1:27017
+10:43:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:143, serverValue:153}] to 127.0.0.1:27017
+10:43:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:144, serverValue:154}] to 127.0.0.1:27017
+10:44:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:135, serverValue:145}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:44:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:145, serverValue:155}] to 127.0.0.1:27017
+10:45:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:136, serverValue:146}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:137, serverValue:147}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:138, serverValue:148}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:139, serverValue:149}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:140, serverValue:150}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:141, serverValue:151}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:142, serverValue:152}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:143, serverValue:153}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:144, serverValue:154}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:45:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:146, serverValue:156}] to 127.0.0.1:27017
+10:45:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:147, serverValue:157}] to 127.0.0.1:27017
+10:45:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:148, serverValue:158}] to 127.0.0.1:27017
+10:45:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:149, serverValue:159}] to 127.0.0.1:27017
+10:45:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:150, serverValue:160}] to 127.0.0.1:27017
+10:45:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:151, serverValue:161}] to 127.0.0.1:27017
+10:45:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:152, serverValue:162}] to 127.0.0.1:27017
+10:45:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:153, serverValue:163}] to 127.0.0.1:27017
+10:45:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:154, serverValue:164}] to 127.0.0.1:27017
+10:46:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:145, serverValue:155}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:46:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:155, serverValue:165}] to 127.0.0.1:27017
+10:47:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:146, serverValue:156}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:147, serverValue:157}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:148, serverValue:158}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:149, serverValue:159}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:150, serverValue:160}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:151, serverValue:161}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:152, serverValue:162}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:153, serverValue:163}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:154, serverValue:164}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:47:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:156, serverValue:166}] to 127.0.0.1:27017
+10:47:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:157, serverValue:167}] to 127.0.0.1:27017
+10:47:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:158, serverValue:168}] to 127.0.0.1:27017
+10:47:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:159, serverValue:169}] to 127.0.0.1:27017
+10:47:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:160, serverValue:170}] to 127.0.0.1:27017
+10:47:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:161, serverValue:171}] to 127.0.0.1:27017
+10:47:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:162, serverValue:172}] to 127.0.0.1:27017
+10:47:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:163, serverValue:173}] to 127.0.0.1:27017
+10:47:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:164, serverValue:174}] to 127.0.0.1:27017
+10:48:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:155, serverValue:165}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:48:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:165, serverValue:175}] to 127.0.0.1:27017
+10:49:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:156, serverValue:166}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:157, serverValue:167}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:158, serverValue:168}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:159, serverValue:169}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:160, serverValue:170}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:161, serverValue:171}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:162, serverValue:172}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:163, serverValue:173}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:164, serverValue:174}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:165, serverValue:175}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:49:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:166, serverValue:176}] to 127.0.0.1:27017
+10:49:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:167, serverValue:177}] to 127.0.0.1:27017
+10:49:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:168, serverValue:178}] to 127.0.0.1:27017
+10:49:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:169, serverValue:179}] to 127.0.0.1:27017
+10:49:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:170, serverValue:180}] to 127.0.0.1:27017
+10:49:43.616 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:171, serverValue:181}] to 127.0.0.1:27017
+10:49:43.618 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:172, serverValue:182}] to 127.0.0.1:27017
+10:49:43.619 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:173, serverValue:183}] to 127.0.0.1:27017
+10:49:43.621 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:174, serverValue:184}] to 127.0.0.1:27017
+10:49:43.622 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:175, serverValue:185}] to 127.0.0.1:27017
+10:51:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:166, serverValue:176}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:167, serverValue:177}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:168, serverValue:178}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:169, serverValue:179}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:170, serverValue:180}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:171, serverValue:181}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:172, serverValue:182}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:173, serverValue:183}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:174, serverValue:184}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:175, serverValue:185}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:51:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:176, serverValue:186}] to 127.0.0.1:27017
+10:51:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:177, serverValue:187}] to 127.0.0.1:27017
+10:51:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:178, serverValue:188}] to 127.0.0.1:27017
+10:51:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:179, serverValue:189}] to 127.0.0.1:27017
+10:51:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:180, serverValue:190}] to 127.0.0.1:27017
+10:51:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:181, serverValue:191}] to 127.0.0.1:27017
+10:51:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:182, serverValue:192}] to 127.0.0.1:27017
+10:51:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:183, serverValue:193}] to 127.0.0.1:27017
+10:51:43.616 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:184, serverValue:194}] to 127.0.0.1:27017
+10:51:43.619 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:185, serverValue:195}] to 127.0.0.1:27017
+10:53:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:176, serverValue:186}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:177, serverValue:187}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:178, serverValue:188}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:179, serverValue:189}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:180, serverValue:190}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:181, serverValue:191}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:182, serverValue:192}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:183, serverValue:193}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:184, serverValue:194}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:185, serverValue:195}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:53:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:186, serverValue:196}] to 127.0.0.1:27017
+10:53:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:187, serverValue:197}] to 127.0.0.1:27017
+10:53:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:188, serverValue:198}] to 127.0.0.1:27017
+10:53:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:189, serverValue:199}] to 127.0.0.1:27017
+10:53:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:190, serverValue:200}] to 127.0.0.1:27017
+10:53:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:191, serverValue:201}] to 127.0.0.1:27017
+10:53:43.615 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:192, serverValue:202}] to 127.0.0.1:27017
+10:53:43.616 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:193, serverValue:203}] to 127.0.0.1:27017
+10:53:43.617 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:194, serverValue:204}] to 127.0.0.1:27017
+10:53:43.618 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:195, serverValue:205}] to 127.0.0.1:27017
+10:55:22.853 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:195, serverValue:205}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.854 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:194, serverValue:204}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.854 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:193, serverValue:203}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.855 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:192, serverValue:202}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.855 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:191, serverValue:201}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.855 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:190, serverValue:200}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.855 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:189, serverValue:199}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.856 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:188, serverValue:198}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.856 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:187, serverValue:197}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.856 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:186, serverValue:196}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:55:22.857 [http-nio-8090-exec-12] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:196, serverValue:206}] to 127.0.0.1:27017
+10:55:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:197, serverValue:207}] to 127.0.0.1:27017
+10:55:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:198, serverValue:208}] to 127.0.0.1:27017
+10:55:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:199, serverValue:209}] to 127.0.0.1:27017
+10:55:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:200, serverValue:210}] to 127.0.0.1:27017
+10:55:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:201, serverValue:211}] to 127.0.0.1:27017
+10:55:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:202, serverValue:212}] to 127.0.0.1:27017
+10:55:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:203, serverValue:213}] to 127.0.0.1:27017
+10:55:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:204, serverValue:214}] to 127.0.0.1:27017
+10:55:43.614 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:205, serverValue:215}] to 127.0.0.1:27017
+10:56:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:196, serverValue:206}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:56:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:206, serverValue:216}] to 127.0.0.1:27017
+10:57:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:197, serverValue:207}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:198, serverValue:208}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:199, serverValue:209}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:200, serverValue:210}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:201, serverValue:211}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:202, serverValue:212}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:203, serverValue:213}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:204, serverValue:214}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:205, serverValue:215}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:57:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:207, serverValue:217}] to 127.0.0.1:27017
+10:57:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:208, serverValue:218}] to 127.0.0.1:27017
+10:57:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:209, serverValue:219}] to 127.0.0.1:27017
+10:57:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:210, serverValue:220}] to 127.0.0.1:27017
+10:57:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:211, serverValue:221}] to 127.0.0.1:27017
+10:57:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:212, serverValue:222}] to 127.0.0.1:27017
+10:57:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:213, serverValue:223}] to 127.0.0.1:27017
+10:57:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:214, serverValue:224}] to 127.0.0.1:27017
+10:57:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:215, serverValue:225}] to 127.0.0.1:27017
+10:58:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:206, serverValue:216}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:58:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:216, serverValue:226}] to 127.0.0.1:27017
+10:59:43.590 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:207, serverValue:217}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.590 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:208, serverValue:218}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.590 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:209, serverValue:219}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:210, serverValue:220}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:211, serverValue:221}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:212, serverValue:222}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:213, serverValue:223}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:214, serverValue:224}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.591 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:215, serverValue:225}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+10:59:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:217, serverValue:227}] to 127.0.0.1:27017
+10:59:43.594 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:218, serverValue:228}] to 127.0.0.1:27017
+10:59:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:219, serverValue:229}] to 127.0.0.1:27017
+10:59:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:220, serverValue:230}] to 127.0.0.1:27017
+10:59:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:221, serverValue:231}] to 127.0.0.1:27017
+10:59:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:222, serverValue:232}] to 127.0.0.1:27017
+10:59:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:223, serverValue:233}] to 127.0.0.1:27017
+10:59:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:224, serverValue:234}] to 127.0.0.1:27017
+10:59:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:225, serverValue:235}] to 127.0.0.1:27017
+11:00:43.588 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:216, serverValue:226}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:00:43.590 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:226, serverValue:236}] to 127.0.0.1:27017
+11:01:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:217, serverValue:227}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:218, serverValue:228}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:219, serverValue:229}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:220, serverValue:230}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:221, serverValue:231}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:222, serverValue:232}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:223, serverValue:233}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:224, serverValue:234}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:225, serverValue:235}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:01:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:227, serverValue:237}] to 127.0.0.1:27017
+11:01:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:228, serverValue:238}] to 127.0.0.1:27017
+11:01:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:229, serverValue:239}] to 127.0.0.1:27017
+11:01:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:230, serverValue:240}] to 127.0.0.1:27017
+11:01:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:231, serverValue:241}] to 127.0.0.1:27017
+11:01:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:232, serverValue:242}] to 127.0.0.1:27017
+11:01:43.611 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:233, serverValue:243}] to 127.0.0.1:27017
+11:01:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:234, serverValue:244}] to 127.0.0.1:27017
+11:01:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:235, serverValue:245}] to 127.0.0.1:27017
+11:02:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:226, serverValue:236}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:02:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:236, serverValue:246}] to 127.0.0.1:27017
+11:03:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:227, serverValue:237}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:228, serverValue:238}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:229, serverValue:239}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:230, serverValue:240}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:231, serverValue:241}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:232, serverValue:242}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:233, serverValue:243}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:234, serverValue:244}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:235, serverValue:245}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:236, serverValue:246}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:03:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:237, serverValue:247}] to 127.0.0.1:27017
+11:03:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:238, serverValue:248}] to 127.0.0.1:27017
+11:03:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:239, serverValue:249}] to 127.0.0.1:27017
+11:03:43.605 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:240, serverValue:250}] to 127.0.0.1:27017
+11:03:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:241, serverValue:251}] to 127.0.0.1:27017
+11:03:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:242, serverValue:252}] to 127.0.0.1:27017
+11:03:43.608 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:243, serverValue:253}] to 127.0.0.1:27017
+11:03:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:244, serverValue:254}] to 127.0.0.1:27017
+11:03:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:245, serverValue:255}] to 127.0.0.1:27017
+11:03:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:246, serverValue:256}] to 127.0.0.1:27017
+11:04:50.301 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:246, serverValue:256}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.301 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:245, serverValue:255}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.301 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:244, serverValue:254}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.303 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:243, serverValue:253}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.303 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:242, serverValue:252}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.303 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:241, serverValue:251}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.304 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:240, serverValue:250}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.304 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:239, serverValue:249}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.307 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:238, serverValue:248}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.307 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:237, serverValue:247}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:04:50.309 [http-nio-8090-exec-25] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:247, serverValue:257}] to 127.0.0.1:27017
+11:05:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:248, serverValue:258}] to 127.0.0.1:27017
+11:05:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:249, serverValue:259}] to 127.0.0.1:27017
+11:05:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:250, serverValue:260}] to 127.0.0.1:27017
+11:05:43.606 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:251, serverValue:261}] to 127.0.0.1:27017
+11:05:43.607 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:252, serverValue:262}] to 127.0.0.1:27017
+11:05:43.609 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:253, serverValue:263}] to 127.0.0.1:27017
+11:05:43.610 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:254, serverValue:264}] to 127.0.0.1:27017
+11:05:43.612 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:255, serverValue:265}] to 127.0.0.1:27017
+11:05:43.613 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:256, serverValue:266}] to 127.0.0.1:27017
+11:06:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:247, serverValue:257}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:06:43.596 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:257, serverValue:267}] to 127.0.0.1:27017
+11:07:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:248, serverValue:258}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:249, serverValue:259}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:250, serverValue:260}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.592 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:251, serverValue:261}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:252, serverValue:262}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:253, serverValue:263}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:254, serverValue:264}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:255, serverValue:265}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.593 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:256, serverValue:266}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:07:43.595 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:258, serverValue:268}] to 127.0.0.1:27017
+11:07:43.597 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:259, serverValue:269}] to 127.0.0.1:27017
+11:07:43.598 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:260, serverValue:270}] to 127.0.0.1:27017
+11:07:43.599 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:261, serverValue:271}] to 127.0.0.1:27017
+11:07:43.600 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:262, serverValue:272}] to 127.0.0.1:27017
+11:07:43.601 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:263, serverValue:273}] to 127.0.0.1:27017
+11:07:43.602 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:264, serverValue:274}] to 127.0.0.1:27017
+11:07:43.603 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:265, serverValue:275}] to 127.0.0.1:27017
+11:07:43.604 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:266, serverValue:276}] to 127.0.0.1:27017
+11:08:43.625 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:257, serverValue:267}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.626 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:258, serverValue:268}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.627 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:259, serverValue:269}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.628 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:260, serverValue:270}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.628 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:261, serverValue:271}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.629 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:262, serverValue:272}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.629 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:263, serverValue:273}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.630 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:264, serverValue:274}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.630 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:265, serverValue:275}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.630 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Closed connection [connectionId{localValue:266, serverValue:276}] to 127.0.0.1:27017 because it is past its maximum allowed idle time.
+11:08:43.681 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:267, serverValue:277}] to 127.0.0.1:27017
+11:08:43.685 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:268, serverValue:278}] to 127.0.0.1:27017
+11:08:43.688 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:269, serverValue:279}] to 127.0.0.1:27017
+11:08:43.690 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:270, serverValue:280}] to 127.0.0.1:27017
+11:08:43.691 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:271, serverValue:281}] to 127.0.0.1:27017
+11:08:43.692 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:272, serverValue:282}] to 127.0.0.1:27017
+11:08:43.694 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:273, serverValue:283}] to 127.0.0.1:27017
+11:08:43.695 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:274, serverValue:284}] to 127.0.0.1:27017
+11:08:43.697 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:275, serverValue:285}] to 127.0.0.1:27017
+11:08:43.698 [MaintenanceTimer-1-thread-1] INFO  o.m.d.connection - [info,71] - Opened connection [connectionId{localValue:276, serverValue:286}] to 127.0.0.1:27017
+11:09:27.767 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,86] - De-registering from Nacos Server now...
+11:09:27.770 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,106] - De-registration finished.

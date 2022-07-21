@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.tzgis.mapper.SysModelMapper">
+
+    <resultMap type="com.hm.tzgis.entity.SysModel" id="SysModelMap">
+        <result property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="name" column="NAME" jdbcType="VARCHAR"/>
+        <result property="geoType" column="GEO_TYPE" jdbcType="INTEGER"/>
+<!--        <result property="worldLoadFlag" column="WORLD_LOAD_FLAG" jdbcType="INTEGER"/>-->
+        <result property="modelInst" column="MODEL_INST" jdbcType="INTEGER"/>
+<!--        <result property="editFlag" column="EDIT_FLAG" jdbcType="INTEGER"/>-->
+<!--        <result property="startFlag" column="START_FLAG" jdbcType="INTEGER"/>-->
+<!--        <result property="queryFlag" column="QUERY_FLAG" jdbcType="INTEGER"/>-->
+        <result property="topoNetwork" column="TOPO_NETWORK" jdbcType="INTEGER"/>
+        <result property="realAttibFlag" column="REAL_ATTIB_FLAG" jdbcType="INTEGER"/>
+        <result property="powerAttrib" column="POWER_ATTRIB" jdbcType="INTEGER"/>
+        <result property="electricType" column="ELECTRIC_TYPE" jdbcType="INTEGER"/>
+        <result property="deviceCategory" column="DEVICE_CATEGORY" jdbcType="INTEGER"/>
+<!--        <result property="fixedPointAttrib" column="FIXED_POINT_ATTRIB" jdbcType="INTEGER"/>-->
+<!--        <result property="moveRotateFlag" column="MOVE_ROTATE_FLAG" jdbcType="INTEGER"/>-->
+<!--        <result property="pointSelRule" column="POINT_SEL_RULE" jdbcType="INTEGER"/>-->
+<!--        <result property="regionSelRule" column="REGION_SEL_RULE" jdbcType="INTEGER"/>-->
+<!--        <result property="complexEdgeFlag" column="COMPLEX_EDGE_FLAG" jdbcType="INTEGER"/>-->
+<!--        <result property="splitedFlag" column="SPLITED_FLAG" jdbcType="INTEGER"/>-->
+<!--        <result property="loadOperFlag" column="LOAD_OPER_FLAG" jdbcType="INTEGER"/>-->
+        <result property="symbolRule" column="SYMBOL_RULE" jdbcType="INTEGER"/>
+<!--        <result property="geoDbType" column="GEO_DB_TYPE" jdbcType="INTEGER"/>-->
+<!--        <result property="geoDbNo" column="GEO_DB_NO" jdbcType="VARCHAR"/>-->
+<!--        <result property="geoTbl" column="GEO_TBL" jdbcType="VARCHAR"/>-->
+<!--        <result property="attrDbType" column="ATTR_DB_TYPE" jdbcType="INTEGER"/>-->
+<!--        <result property="attrDbNo" column="ATTR_DB_NO" jdbcType="VARCHAR"/>-->
+<!--        <result property="attrTbl" column="ATTR_TBL" jdbcType="VARCHAR"/>-->
+<!--        <result property="syncMode" column="SYNC_MODE" jdbcType="INTEGER"/>-->
+        <result property="dispOrder" column="DISP_ORDER" jdbcType="INTEGER"/>
+        <result property="enableed" column="ENABLEED" jdbcType="INTEGER"/>
+<!--        <result property="unit" column="UNIT" jdbcType="INTEGER"/>-->
+<!--        <result property="defaultvalue" column="DEFAULTVALUE" jdbcType="INTEGER"/>-->
+<!--        <result property="operAttrib" column="OPER_ATTRIB" jdbcType="INTEGER"/>-->
+<!--        <result property="modelSeq" column="MODEL_SEQ" jdbcType="VARCHAR"/>-->
+<!--        <result property="hasGis" column="HAS_GIS" jdbcType="INTEGER"/>-->
+<!--        <result property="specialBreak" column="SPECIAL_BREAK" jdbcType="INTEGER"/>-->
+<!--        <result property="symbolZoomRule" column="SYMBOL_ZOOM_RULE" jdbcType="INTEGER"/>-->
+<!--        <result property="descr" column="DESCR" jdbcType="VARCHAR"/>-->
+<!--        <result property="modelVolt" column="MODEL_VOLT" jdbcType="INTEGER"/>-->
+<!--        <result property="scadaFlag" column="SCADA_FLAG" jdbcType="INTEGER"/>-->
+<!--        <result property="has3d" column="HAS3D" jdbcType="INTEGER"/>-->
+        <result property="deviceType" column="DEVICE_TYPE" jdbcType="INTEGER"/>
+<!--        <result property="modelVerFlag" column="MODEL_VER_FLAG" jdbcType="INTEGER"/>-->
+<!--        <result property="attrVerTbl" column="ATTR_VER_TBL" jdbcType="VARCHAR"/>-->
+<!--        <result property="modelVerRule" column="MODEL_VER_RULE" jdbcType="INTEGER"/>-->
+<!--        <result property="cardParaFlag" column="CARD_PARA_FLAG" jdbcType="INTEGER"/>-->
+        <result property="isSketchObj" column="IS_SKETCH_OBJ" jdbcType="INTEGER"/>
+        <result property="topoType" column="TOPO_TYPE" jdbcType="INTEGER"/>
+        <result property="fieldsList" column="FIELDSLIST" jdbcType="VARCHAR"/>
+<!--        <result property="remark" column="REMARK" jdbcType="VARCHAR"/>-->
+<!--        <result property="keyinfoView" column="KEYINFO_VIEW" jdbcType="VARCHAR"/>-->
+<!--        <result property="keyinfoviewBak" column="KEYINFOVIEW_BAK" jdbcType="VARCHAR"/>-->
+<!--        <result property="attrView" column="ATTR_VIEW" jdbcType="VARCHAR"/>-->
+<!--        <result property="geoView" column="GEO_VIEW" jdbcType="VARCHAR"/>-->
+    </resultMap>
+
+    <!--分页查询-->
+    <select id="querySysModel" resultMap="SysModelMap">
+        select
+          ID, NAME, GEO_TYPE, WORLD_LOAD_FLAG, MODEL_INST, EDIT_FLAG, START_FLAG, QUERY_FLAG, TOPO_NETWORK, REAL_ATTIB_FLAG, POWER_ATTRIB, ELECTRIC_TYPE, DEVICE_CATEGORY, FIXED_POINT_ATTRIB, MOVE_ROTATE_FLAG, POINT_SEL_RULE, REGION_SEL_RULE, COMPLEX_EDGE_FLAG, SPLITED_FLAG, LOAD_OPER_FLAG, SYMBOL_RULE, GEO_DB_TYPE, GEO_DB_NO, GEO_TBL, ATTR_DB_TYPE, ATTR_DB_NO, ATTR_TBL, SYNC_MODE, DISP_ORDER, ENABLEED, UNIT, DEFAULTVALUE, OPER_ATTRIB, MODEL_SEQ, HAS_GIS, SPECIAL_BREAK, SYMBOL_ZOOM_RULE, DESCR, MODEL_VOLT, SCADA_FLAG, HAS3D, DEVICE_TYPE, MODEL_VER_FLAG, ATTR_VER_TBL, MODEL_VER_RULE, CARD_PARA_FLAG, IS_SKETCH_OBJ, TOPO_TYPE, REMARK, KEYINFO_VIEW, KEYINFOVIEW_BAK, ATTR_VIEW, GEO_VIEW ,FIELDSLIST
+        from HM_SYS.SYS_MODEL where enableed > 0
+         <if test="id!=null and id!=''">
+                and  id =#{id}
+          </if>
+    </select>
+
+    <resultMap type="com.hm.tzgis.entity.SysModelSymbol" id="SysModelSymbolMap">
+        <result property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="worldid" column="WORLDID" jdbcType="INTEGER"/>
+        <result property="objType" column="OBJ_TYPE" jdbcType="INTEGER"/>
+<!--        <result property="dispOrder" column="DISP_ORDER" jdbcType="INTEGER"/>-->
+        <result property="subType" column="SUB_TYPE" jdbcType="INTEGER"/>
+<!--        <result property="display" column="DISPLAY" jdbcType="INTEGER"/>-->
+<!--        <result property="imgIndex" column="IMG_INDEX" jdbcType="INTEGER"/>-->
+    </resultMap>
+
+    <!--分页查询-->
+    <select id="querySysModelSymbol" resultMap="SysModelSymbolMap">
+        select
+        ID, WORLDID, OBJ_TYPE, DISP_ORDER, SUB_TYPE, DISPLAY, IMG_INDEX
+        from HM_SYS.SYS_MODEL_SYMBOL where OBJ_TYPE in (select id from hm_sys.sys_model where enableed > 0)
+        <if test="subType!=null and subType!=''">
+            and  SUB_TYPE =#{subType}
+        </if>
+    </select>
+
+    <resultMap type="com.hm.tzgis.entity.SysSymbolJson" id="SysSymbolJsonMap">
+        <result property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="name" column="NAME" jdbcType="VARCHAR"/>
+        <result property="code" column="CODE" jdbcType="VARCHAR"/>
+<!--        <result property="status" column="STATUS" jdbcType="INTEGER"/>-->
+<!--        <result property="oprttime" column="OPRTTIME" jdbcType="TIMESTAMP"/>-->
+<!--        <result property="errinfo" column="ERRINFO" jdbcType="VARCHAR"/>-->
+        <result property="dataclob" column="DATACLOB" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--分页查询-->
+    <select id="querySysSymbolJson" resultMap="SysSymbolJsonMap">
+        select
+        ID, NAME, CODE, STATUS, OPRTTIME, ERRINFO, DATACLOB
+        from HM_SYS.SYS_SYMBOL_JSON where id in (select worldid from hm_sys.sys_model a,hm_sys.sys_model_symbol b where a.id = b.OBJ_TYPE and enableed > 0)
+        and status = 0
+    </select>
+
+    <resultMap type="com.hm.tzgis.entity.SysDispConfig" id="SysDispConfigMap">
+        <result property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="objType" column="OBJ_TYPE" jdbcType="INTEGER"/>
+        <result property="subtype" column="SUBTYPE" jdbcType="INTEGER"/>
+        <result property="minScale" column="MIN_SCALE" jdbcType="NUMERIC"/>
+        <result property="maxScale" column="MAX_SCALE" jdbcType="NUMERIC"/>
+        <result property="objSize" column="OBJ_SIZE" jdbcType="INTEGER"/>
+        <result property="objSym" column="OBJ_SYM" jdbcType="INTEGER"/>
+        <result property="lineWidth" column="LINE_WIDTH" jdbcType="INTEGER"/>
+        <result property="serverId" column="SERVER_ID" jdbcType="INTEGER"/>
+<!--        <result property="subField" column="SUB_FIELD" jdbcType="VARCHAR"/>-->
+        <result property="color" column="COLOR" jdbcType="INTEGER"/>
+        <result property="penstyle" column="PENSTYLE" jdbcType="INTEGER"/>
+        <result property="showAsPoint" column="SHOW_AS_POINT" jdbcType="INTEGER"/>
+<!--        <result property="schemeId" column="SCHEME_ID" jdbcType="INTEGER"/>-->
+        <result property="fillColor" column="FILL_COLOR" jdbcType="INTEGER"/>
+<!--        <result property="labelScale" column="LABEL_SCALE" jdbcType="NUMERIC"/>-->
+<!--        <result property="objLabelScale" column="OBJ_LABEL_SCALE" jdbcType="NUMERIC"/>-->
+        <result property="universe" column="UNIVERSE" jdbcType="INTEGER"/>
+<!--        <result property="ord" column="ORD" jdbcType="INTEGER"/>-->
+<!--        <result property="rangeid" column="RANGEID" jdbcType="INTEGER"/>-->
+<!--        <result property="labelColor" column="LABEL_COLOR" jdbcType="INTEGER"/>-->
+        <result property="brushType" column="BRUSH_TYPE" jdbcType="INTEGER"/>
+        <result property="areaId" column="AREA_ID" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--分页查询-->
+    <select id="querySysDispConfig" resultMap="SysDispConfigMap">
+        select
+        ID, OBJ_TYPE, SUBTYPE, MIN_SCALE, MAX_SCALE, OBJ_SIZE, OBJ_SYM, LINE_WIDTH, SERVER_ID, SUB_FIELD,
+        COLOR, PENSTYLE, SHOW_AS_POINT, SCHEME_ID, FILL_COLOR, LABEL_SCALE, OBJ_LABEL_SCALE, UNIVERSE, ORD, RANGEID, LABEL_COLOR, BRUSH_TYPE, AREA_ID
+        from HM_SYS.SYS_DISP_CONFIG where 1=1
+        <if test="objType!=null and objType!=''">
+            and  OBJ_TYPE =#{objType}
+        </if>
+        <if test="universe!=null and universe!=''">
+            and  UNIVERSE =#{universe}
+        </if>
+
+        <if test="serverId!=null and serverId!=''">
+            and  SERVER_ID =#{serverId}
+        </if>
+        <if test="serverId==null or serverId==''">
+            and  SERVER_ID = 27
+        </if>
+        order by AREA_ID desc
+    </select>
+
+
+    <resultMap id="txMapVersionMap" type="com.hm.tzgis.entity.TxMapVersion">
+        <result column="id" jdbcType="BIGINT" property="id"/>
+        <result column="company_id" jdbcType="VARCHAR" property="companyId"/>
+        <result column="company_name" jdbcType="VARCHAR" property="companyName"/>
+        <result column="yxdw_id" jdbcType="VARCHAR" property="yxdwId"/>
+        <result column="yxdw_name" jdbcType="VARCHAR" property="yxdwName"/>
+        <result column="bdz_id" jdbcType="VARCHAR" property="bdzId"/>
+        <result column="bdz_name" jdbcType="VARCHAR" property="bdzName"/>
+        <result column="line_id" jdbcType="VARCHAR" property="lineId"/>
+        <result column="line_name" jdbcType="VARCHAR" property="lineName"/>
+        <result column="voltage_id" jdbcType="VARCHAR" property="voltageId"/>
+        <result column="voltage_name" jdbcType="VARCHAR" property="voltageName"/>
+        <result column="object_type" jdbcType="VARCHAR" property="objectType"/>
+        <result column="object_type_name" jdbcType="VARCHAR" property="objectTypeName"/>
+        <result column="object_id" jdbcType="VARCHAR" property="objectId"/>
+        <result column="object_name" jdbcType="VARCHAR" property="objectName"/>
+        <result column="map_type_id" jdbcType="VARCHAR" property="mapTypeId"/>
+        <result column="map_type_name" jdbcType="VARCHAR" property="mapTypeName"/>
+        <result column="flow_id" jdbcType="VARCHAR" property="flowId"/>
+        <result column="flow_business_id" jdbcType="VARCHAR" property="flowBusinessId"/>
+        <result column="version_type" jdbcType="VARCHAR" property="versionType"/>
+        <result column="map_state" jdbcType="VARCHAR" property="mapState"/>
+        <result column="map_version" jdbcType="VARCHAR" property="mapVersion"/>
+        <result column="file_geo_id" jdbcType="VARCHAR" property="fileGeoId"/>
+        <result column="world_id" jdbcType="VARCHAR" property="worldId"/>
+        <result column="map_name" jdbcType="VARCHAR" property="mapName"/>
+        <result column="filename_svg" jdbcType="VARCHAR" property="filenameSvg"/>
+        <result column="filepath_svg" jdbcType="VARCHAR" property="filepathSvg"/>
+        <result column="filename_xml" jdbcType="VARCHAR" property="filenameXml"/>
+        <result column="filepath_xml" jdbcType="VARCHAR" property="filepathXml"/>
+        <result column="filename_geo" jdbcType="VARCHAR" property="filenameGeo"/>
+        <result column="filepath_geo" jdbcType="VARCHAR" property="filepathGeo"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="create_time" jdbcType="VARCHAR" property="createTime"/>
+        <result column="create_dept_id" jdbcType="VARCHAR" property="createDeptId"/>
+        <result column="create_dept_name" jdbcType="VARCHAR" property="createDeptName"/>
+        <result column="create_user_id" jdbcType="VARCHAR" property="createUserId"/>
+        <result column="create_user_name" jdbcType="VARCHAR" property="createUserName"/>
+        <!-- 基准图纸（老版本）（= EM.GIS_SYS_WORLD.BASE_WORLDID） -->
+        <result column="base_worldid" jdbcType="VARCHAR" property="baseWorldid"/>
+        <!-- 版本发布日期（转为黑图时） -->
+        <result column="publish_date" jdbcType="VARCHAR" property="publishDate"/>
+
+        <!-- 方便记录删除 及 修改，  库表代码：按年月命名， 动态的，如  TX_MAP_VERSION_202101 -->
+        <result column="table_code" jdbcType="VARCHAR" property="tableCode"/>
+        <result column="obj_num" jdbcType="VARCHAR" property="objNum"/>
+        <result column="viewbox" jdbcType="VARCHAR" property="viewbox"/>
+
+    </resultMap>
+
+    <select id="queryByWorldid" resultMap="txMapVersionMap">
+        select * from  HM_TX.TX_MAP_VERSION
+                           t where t.world_id=#{worldId}
+    </select>
+
+
+    <resultMap id="sysSketchmapParaResultMap" type="com.hm.tzgis.entity.SysSketchmapPara" >
+        <result column="ID" property="id" jdbcType="NUMERIC" />
+        <result column="NAME" property="name" jdbcType="VARCHAR" />
+        <result column="VALUE" property="value" jdbcType="VARCHAR" />
+        <result column="UNIVERSE" property="universe" jdbcType="SMALLINT" />
+        <result column="AREAID" property="areaid" jdbcType="NUMERIC" />
+<!--        <result column="EXTNAME" property="extname" jdbcType="VARCHAR" />-->
+<!--        <result column="PARATYPE" property="paratype" jdbcType="VARCHAR" />-->
+<!--        <result column="SCHEME_ID" property="schemeId" jdbcType="SMALLINT" />-->
+<!--        <result column="ENABLED" property="enabled" jdbcType="NUMERIC" />-->
+<!--        <result column="CONTENTOPTION" property="contentoption" jdbcType="VARCHAR" />-->
+<!--        <result column="VALUETYPE" property="valuetype" jdbcType="NUMERIC" />-->
+<!--        <result column="SHOWSEQ" property="showseq" jdbcType="SMALLINT" />-->
+<!--        <result column="GROUPID" property="groupid" jdbcType="NUMERIC" />-->
+<!--        <result column="CATEID" property="cateid" jdbcType="NUMERIC" />-->
+<!--        <result column="INSIDEID" property="insideid" jdbcType="VARCHAR" />-->
+<!--        <result column="SHOWFLAG" property="showflag" jdbcType="NUMERIC" />-->
+    </resultMap>
+
+    <select id="querySysSketchmapPara" resultMap="sysSketchmapParaResultMap">
+        select * from HM_SYS.SYS_SKETCHMAP_PARA where 1=1
+<!--        <if test="paratype != null and paratype != ''" >-->
+<!--            and PARATYPE = #{paratype}-->
+<!--        </if>-->
+        <if test="universe != null and universe != ''" >
+            and UNIVERSE = #{universe}
+        </if>
+        <if test="areaid != null" >
+            and ( AREAID = #{areaid} or AREAID=0)
+        </if>
+        <if test="enabled != null" >
+            and enabled > #{enabled}
+        </if>
+        <if test="name != null and name != ''" >
+            and (NAME like concat('%',#{name},'%') or EXTNAME like concat('%',#{name},'%'))
+        </if>
+        order by AREAID desc
+    </select>
+
+    <resultMap id="sysUniverseConfigMap" type="com.hm.tzgis.entity.SysUniverseConfig">
+        <result column="id" jdbcType="BIGINT" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="orderno" jdbcType="INTEGER" property="orderno" />
+        <result column="enabled" jdbcType="INTEGER" property="enabled" />
+        <result column="disp_type" jdbcType="INTEGER" property="dispType" />
+        <result column="coord_type" jdbcType="INTEGER" property="coordType" />
+        <result column="ref_extent_type" jdbcType="INTEGER" property="refExtentType" />
+        <result column="ref_extent_l" jdbcType="DOUBLE" property="refExtentL" />
+        <result column="ref_extent_r" jdbcType="DOUBLE" property="refExtentR" />
+        <result column="ref_extent_t" jdbcType="DOUBLE" property="refExtentT" />
+        <result column="ref_extent_b" jdbcType="DOUBLE" property="refExtentB" />
+        <result column="cross_radius" jdbcType="DOUBLE" property="crossRadius" />
+        <result column="type_flag" jdbcType="INTEGER" property="typeFlag" />
+        <result column="disp_flag" jdbcType="INTEGER" property="dispFlag" />
+        <result column="disp_bg_flag" jdbcType="INTEGER" property="dispBgFlag" />
+        <result column="core_flag" jdbcType="INTEGER" property="coreFlag" />
+        <result column="scada_flag" jdbcType="INTEGER" property="scadaFlag" />
+        <result column="misc_flag" jdbcType="INTEGER" property="miscFlag" />
+        <result column="oper_flag" jdbcType="INTEGER" property="operFlag" />
+        <result column="flag1" jdbcType="INTEGER" property="flag1" />
+        <result column="flag2" jdbcType="INTEGER" property="flag2" />
+        <result column="flag3" jdbcType="INTEGER" property="flag3" />
+    </resultMap>
+
+    <select id="querySysUniverseConfig" resultMap="sysUniverseConfigMap">
+        select * from HM_SYS.SYS_UNIVERSE_CONFIG where 1=1
+        <if test="id!=null and id!=''">
+            and  id =#{id}
+        </if>
+    </select>
+
+
+    <resultMap type="com.hm.tzgis.entity.SysEnvironment" id="SysEnvironmentMap">
+        <result property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="sectionName" column="SECTION_NAME" jdbcType="VARCHAR"/>
+        <result property="keyName" column="KEY_NAME" jdbcType="VARCHAR"/>
+        <result property="val" column="VAL" jdbcType="VARCHAR"/>
+        <result property="fieldesc" column="FIELDESC" jdbcType="VARCHAR"/>
+        <result property="remark" column="REMARK" jdbcType="VARCHAR"/>
+        <result property="enabled" column="ENABLED" jdbcType="INTEGER"/>
+        <result property="cateid" column="CATEID" jdbcType="INTEGER"/>
+        <result property="insize" column="INSIZE" jdbcType="VARCHAR"/>
+        <result property="valuetype" column="VALUETYPE" jdbcType="INTEGER"/>
+        <result property="areaId" column="AREA_ID" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="querySysEnvironmentBySection" resultMap="SysEnvironmentMap">
+        select ID, SECTION_NAME,KEY_NAME,VAL,FIELDESC,REMARK,ENABLED,CATEID,INSIDE,VALUETYPE,AREA_ID
+        from HM_SYS.SYS_ENVIRONMENT
+        where enabled>0 and SECTION_NAME = #{section} and area_id=0 order by area_id desc
+    </select>
+
+
+    <select id="getGisSysColorByDispType" resultType="com.hm.tzgis.entity.GisSysColorBean">
+        SELECT
+            *
+        FROM
+            HM_SYS.GIS_SYS_COLOR
+        WHERE
+                DISP_TYPE = (select disp_type from hm_sys.sys_universe_config where id=#{dispType})
+           or DISP_TYPE > 49
+    </select>
+
+    <resultMap id="txButtonConfigBeanMap" type="com.hm.tzgis.entity.TxButtonConfigBean">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="button_code" jdbcType="VARCHAR" property="buttonCode"/>
+        <result column="descr" jdbcType="VARCHAR" property="descr"/>
+        <result column="button_name" jdbcType="VARCHAR" property="buttonName"/>
+        <result column="type" jdbcType="VARCHAR" property="type"/>
+        <result column="type_name" jdbcType="VARCHAR" property="typeName"/>
+        <result column="create_time" jdbcType="VARCHAR" property="createTime"/>
+        <result column="create_user" jdbcType="VARCHAR" property="createUser"/>
+        <result column="update_time" jdbcType="VARCHAR" property="updateTime"/>
+        <result column="update_user" jdbcType="VARCHAR" property="updateUser"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="isenabled" jdbcType="VARCHAR" property="isenabled"/>
+        <result column="isdisplay" jdbcType="VARCHAR" property="isdisplay"/>
+        <result column="parent_button_code" jdbcType="VARCHAR" property="parentButtonCode"/>
+        <result column="display_num" jdbcType="VARCHAR" property="displayNum"/>
+        <result column="display_row_num" jdbcType="VARCHAR" property="displayRowNum"/>
+        <result column="ispopup" jdbcType="VARCHAR" property="ispopup"/>
+        <result column="isdefault_select_button" jdbcType="VARCHAR" property="isdefaultSelectButton"/>
+        <result column="button_class" jdbcType="VARCHAR" property="buttonClass"/>
+        <result column="has_right_line" jdbcType="VARCHAR" property="hasRightLine"/>
+        <result column="group_index" jdbcType="VARCHAR" property="groupIndex"/>
+    </resultMap>
+
+    <select id="queryAllTxButtonConfig" resultMap="txButtonConfigBeanMap">
+        select *
+        from HM_TX.TX_BUTTON_CONFIG
+        where ISDISPLAY = 1
+    </select>
+
+
+    <resultMap id="txButtonFunctionBeanMap" type="com.hm.tzgis.entity.TxButtonFunctionBean">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="button_code" jdbcType="VARCHAR" property="buttonCode" />
+        <result column="descr" jdbcType="VARCHAR" property="descr" />
+        <result column="button_name" jdbcType="VARCHAR" property="buttonName" />
+        <result column="shortcut_key" jdbcType="VARCHAR" property="shortcutKey" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="content" jdbcType="VARCHAR" property="content" />
+        <result column="suggestion" jdbcType="VARCHAR" property="suggestion" />
+        <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+        <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+        <result column="isenabled" jdbcType="VARCHAR" property="isenabled" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="type_name" jdbcType="VARCHAR" property="typeName" />
+        <result column="obj_type" jdbcType="VARCHAR" property="objType" />
+        <result column="obj_type_name" jdbcType="VARCHAR" property="objTypeName" />
+        <result column="map_type" jdbcType="VARCHAR" property="mapType" />
+        <result column="map_type_name" jdbcType="VARCHAR" property="mapTypeName" />
+        <result column="ico_name" jdbcType="VARCHAR" property="icoName" />
+        <result column="img_name" jdbcType="VARCHAR" property="imgName" />
+        <result column="is_input_text" jdbcType="VARCHAR" property="isInputText" />
+        <result column="is_display_text" jdbcType="VARCHAR" property="isDisplayText" />
+        <result column="width" jdbcType="VARCHAR" property="width" />
+        <result column="heigth" jdbcType="VARCHAR" property="heigth" />
+        <result column="parent_button_code" jdbcType="VARCHAR" property="parentButtonCode" />
+        <result column="api_js" jdbcType="VARCHAR" property="apiJs" />
+        <result column="api_url" jdbcType="VARCHAR" property="apiUrl" />
+        <result column="placeholder" jdbcType="VARCHAR" property="placeholder" />
+        <result column="display_text_words" jdbcType="VARCHAR" property="displayTextWords" />
+        <result column="symbol_type" jdbcType="VARCHAR" property="symbolType" />
+        <result column="display_function" jdbcType="VARCHAR" property="displayFunction" />
+
+    </resultMap>
+
+    <select id="queryTxButtonFunction" resultMap="txButtonFunctionBeanMap">
+        select * from HM_TX.TX_BUTTON_FUNCTION where 1=1
+        <if test="buttonCode!=null and buttonCode!=''">
+            and button_code like CONCAT('%',CONCAT(#{buttonCode},'%'))
+        </if>
+        <if test="isenabled!=null and isenabled!=''">
+            and isenabled = #{isenabled}
+        </if>
+        <if test="buttonName!=null and buttonName!=''">
+            and button_name like CONCAT('%',CONCAT(#{buttonName},'%'))
+        </if>
+        <if test="type!=null and type!=''">
+            and type = #{type,jdbcType=VARCHAR}
+        </if>
+        <if test="displayFunction != null and displayFunction !='' ">
+            and display_function = #{displayFunction}
+        </if>
+    </select>
+
+    <resultMap id="txPropertydictsMap" type="com.hm.tzgis.entity.TxPropertydicts">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="propertydomainid" jdbcType="INTEGER" property="propertydomainid"/>
+        <result column="internalid" jdbcType="VARCHAR" property="internalid"/>
+        <result column="displayseq" jdbcType="VARCHAR" property="displayseq"/>
+        <result column="displayname" jdbcType="VARCHAR" property="displayname"/>
+        <result column="simplepinyin" jdbcType="VARCHAR" property="simplepinyin"/>
+        <result column="fullpinyin" jdbcType="VARCHAR" property="fullpinyin"/>
+        <result column="isdisable" jdbcType="VARCHAR" property="isdisable"/>
+        <result column="create_time" jdbcType="VARCHAR" property="createTime"/>
+        <result column="create_user" jdbcType="VARCHAR" property="createUser"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="ispopup" jdbcType="VARCHAR" property="ispopup"/>
+    </resultMap>
+
+    <select id="queryPropertiesByInternalIds" parameterType="java.util.List" resultMap="txPropertydictsMap">
+        select *
+        from HM_TX.TX_PROPERTYDICTS
+        where internalid in
+        <foreach item="intId" collection="list" open="(" separator="," close=")">
+            #{intId,jdbcType=VARCHAR}
+        </foreach>
+    </select>
+
+
+    <resultMap id="txFileLogBeanMap" type="com.hm.tzgis.entity.TxFileLogBean">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="company_id" jdbcType="VARCHAR" property="companyId" />
+        <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+        <result column="table_code" jdbcType="VARCHAR" property="tableCode" />
+        <result column="table_key_value" jdbcType="VARCHAR" property="tableKeyValue" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="descr" jdbcType="VARCHAR" property="descr" />
+        <result column="fileformat" jdbcType="VARCHAR" property="fileformat" />
+        <result column="filename" jdbcType="VARCHAR" property="filename" />
+        <result column="filesize" jdbcType="VARCHAR" property="filesize" />
+        <result column="filepath" jdbcType="VARCHAR" property="filepath" />
+        <result column="filepath_small" jdbcType="VARCHAR" property="filepathSmall" />
+        <result column="filepath_view" jdbcType="VARCHAR" property="filepathView" />
+        <result column="upload_time" jdbcType="VARCHAR" property="uploadTime" />
+        <result column="upload_user" jdbcType="VARCHAR" property="uploadUser" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+    </resultMap>
+
+    <select id="queryFileLogBeanByButtonCode" parameterType="java.util.List" resultMap="txFileLogBeanMap">
+        SELECT *
+        FROM HM_TX.TX_FILE_LOG
+        WHERE TABLE_CODE = 'TX_BUTTON_FUNCTION'
+        AND TABLE_KEY_VALUE IN (SELECT ID FROM HM_TX.TX_BUTTON_FUNCTION WHERE BUTTON_CODE IN
+        <foreach item="item" collection="list" open="(" separator="," close=")">
+            #{item,jdbcType=VARCHAR}
+        </foreach>
+        )
+    </select>
+
+</mapper>
+
